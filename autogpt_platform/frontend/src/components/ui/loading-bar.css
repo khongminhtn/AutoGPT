@@ -1,0 +1,23 @@
+@keyframes move-gradient {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
+}
+
+
+#loading-bar-during-run-time {
+  position: fixed;
+  z-index: 60;
+  
+  width: 100%;
+  height: 5px;
+
+  background-image: linear-gradient(to right, white, #883eff, white);
+  background-size: 400% 400%;
+
+  /* ANIMATION */
+  animation-name: move-gradient;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
